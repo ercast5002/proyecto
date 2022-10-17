@@ -69,7 +69,7 @@ public class ReservationController {
         return reservationService.getRervationsBetweenDatesReport(fecha1, fecha2);
     }
 
-    @GetMapping("/report-dates/")
+    @GetMapping("/report-status/")
     public CompletedAndCancelled getReservationStatusReport(){
         return reservationService.getReservationStatusReport();
     }
