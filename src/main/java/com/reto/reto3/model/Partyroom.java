@@ -20,9 +20,9 @@ public class Partyroom {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String name;
     private String owner;
     private Integer capacity;
-    private String name; 
     private String description;
 
     @ManyToOne
@@ -46,6 +46,14 @@ public class Partyroom {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getOwner() {
         return owner;
     }
@@ -62,14 +70,7 @@ public class Partyroom {
         this.capacity = capacity;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    
     public String getDescription() {
         return description;
     }
@@ -86,14 +87,6 @@ public class Partyroom {
         this.category = category;
     }
 
-    public List<Reservation> getReservations() {
-        return reservations;
-    }
-
-    public void setReservations(List<Reservation> reservations) {
-        this.reservations = reservations;
-    }
-
     public List<Message> getMessages() {
         return messages;
     }
@@ -102,5 +95,15 @@ public class Partyroom {
         this.messages = messages;
     }
 
+
+    public List<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
+    }
+
+    
 
 }

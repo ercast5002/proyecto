@@ -85,8 +85,7 @@ public class Reservation {
         this.score = score;
     }
 
-    
-    
+   
 
 
     
