@@ -1,6 +1,6 @@
 package com.reto.reto3.model.DTOs;
 
-import ch.qos.logback.core.net.server.Client;
+import com.reto.reto3.model.Client;
 
 public class TotalAndClient {
     private Long total;
@@ -10,10 +10,6 @@ public class TotalAndClient {
     public TotalAndClient(Long total, Client client) {
         this.total = total;
         this.client = client;
-    }
-
-
-    public TotalAndClient(Long total2, com.reto.reto3.model.Client client2) {
     }
 
 
